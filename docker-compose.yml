@@ -28,9 +28,14 @@ services:
       MYSQL_DATABASE: WONGSITO
       MYSQL_ROOT_PASSWORD: root
     hostname: db
+    volumes:
+      - db_data:/var/lib/mysql # Asignación de un volumen al directorio de datos de MySQL
     networks:
       - mi-red
 
 networks:
   mi-red:
     driver: bridge
+
+volumes:
+  db_data: # Definición del volumen para almacenar los datos de la base de datos
