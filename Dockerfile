@@ -21,4 +21,4 @@ COPY --from=builder /app/target/SITILI-0.0.1-SNAPSHOT.jar /app.jar
 EXPOSE 8099
 
 # Comando para ejecutar la aplicación con espera para la base de datos
-CMD ["sh", "-c", "sleep 20 && java -jar /app/app.jar"]
+CMD ["sh", "-c", "sleep 20 && java -jar /app.jar"]
