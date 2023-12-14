@@ -18,7 +18,7 @@ FROM openjdk:11-jdk
 COPY --from=builder /app/target/SITILI-0.0.1-SNAPSHOT.jar /app.jar
 
 # Expone el puerto en el que se ejecuta tu aplicación
-EXPOSE 8090
+EXPOSE 8099
 
 # Comando para ejecutar la aplicación con espera para la base de datos
 CMD ["sh", "-c", "sleep 20 && java -jar /app/app.jar"]
