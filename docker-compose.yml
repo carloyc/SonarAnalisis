@@ -16,7 +16,7 @@ services:
       spring.jpa.database-platform: org.hibernate.dialect.MySQL8Dialect
       spring.sql.init.mode: always
       spring.jpa.hibernate.ddl-auto: create
-      server.port: 8090
+      server.port: 8099
     networks:
       - mi-red
 
